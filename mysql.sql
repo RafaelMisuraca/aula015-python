@@ -1,10 +1,20 @@
-create database meu_primeiro_banco_de_dados;
-
-create table Carro(
+create database	escola;
+use escola;
+CREATE TABLE alunos(
+id_aluno int,
 nome varchar(40),
-modelo varchar(40),
-ano int,
-disponivel boolean
+idade int
 );
 
-use meu_primeiro_banco_de_dados;
+CREATE TABLE cursos(
+id_cursos int,
+nome_curso varchar(40),
+carga_horaria int
+);
+
+CREATE TABLE matriculas(
+id_matricula int,
+id_aluno int,
+id_curso int,
+data_matricula int
+);
